@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surging — Support</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f8f9fc; --border: #e5e7eb;
+    --text: #111827; --muted: #6b7280; --accent: #1a237e; --teal: #0d9488; --ink: #374151;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --surface: #161b22; --border: #30363d;
+      --text: #e6edf3; --muted: #8b949e; --accent: #64ffda; --teal: #2dd4bf; --ink: #c9d1d9;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  body { max-width: 720px; margin: 0 auto; padding: 60px 24px 120px; }
+
+  header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+  .app-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .app-icon { width: 56px; height: 56px; border-radius: 14px; overflow: hidden; flex-shrink: 0; }
+  .app-name { font-size: 26px; font-weight: 700; color: var(--text); letter-spacing: -0.03em; }
+  .app-tagline { font-size: 14px; color: var(--muted); margin-top: 2px; }
+  .doc-title { font-size: 15px; font-weight: 600; color: var(--accent); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
+
+  .contact-box { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--teal); border-radius: 8px; padding: 24px 28px; margin-bottom: 48px; }
+  .contact-box p { font-size: 16px; color: var(--ink); }
+  .contact-box a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  .contact-box a:hover { text-decoration: underline; }
+  .contact-sub { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+  section { margin-bottom: 44px; }
+  h2 { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  p { font-size: 15px; color: var(--ink); margin-bottom: 12px; }
+
+  .faq-item { margin-bottom: 20px; }
+  .faq-q { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+  .faq-a { font-size: 14px; color: var(--ink); line-height: 1.65; }
+  .faq-a code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; background: var(--surface); padding: 1px 6px; border-radius: 4px; color: var(--teal); }
+
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="app-row">
+    <div class="app-icon">
+      <svg width="56" height="56" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1024" height="1024" fill="#0D1B4B"/>
+        <rect x="102" y="582" width="91" height="330" rx="20" fill="#2A3B8F" opacity="0.65"/>
+        <rect x="228" y="456" width="91" height="456" rx="20" fill="#3A50B0" opacity="0.75"/>
+        <rect x="354" y="330" width="91" height="582" rx="20" fill="#5068C8" opacity="0.85"/>
+        <rect x="480" y="205" width="91" height="707" rx="20" fill="#7089D8"/>
+        <rect x="606" y="102" width="91" height="810" rx="20" fill="#A0B4E8"/>
+        <rect x="732" y="46"  width="91" height="866" rx="20" fill="#D0DCEF"/>
+        <path d="M148 558 L274 432 L400 306 L526 180 L652 78 L778 22" stroke="#64FFDA" stroke-width="17" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="778" cy="22" r="26" fill="#64FFDA"/>
+        <polygon points="778,0 820,58 736,58" fill="#64FFDA"/>
+      </svg>
+    </div>
+    <div>
+      <div class="app-name">Surging</div>
+      <div class="app-tagline">Goal tracker with AI coaching</div>
+    </div>
+  </div>
+  <div class="doc-title">Support</div>
+</header>
+
+<div class="contact-box">
+  <p>Need help? Email us at <a href="mailto:surging.app@gmail.com">surging.app@gmail.com</a></p>
+  <p class="contact-sub">We aim to respond within 1–2 business days.</p>
+</div>
+
+<section>
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">Do I need an account to use Surging?</div>
+    <div class="faq-a">No. Surging works entirely on your device with no account, no sign-in, and no cloud storage. Your goals and progress stay private on your phone.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How does the AI coaching work?</div>
+    <div class="faq-a">Surging uses Groq, a fast cloud AI service, to analyze your goal progress and offer coaching suggestions. AI insights work out of the box with no setup. You can optionally add your own free Groq API key from <code>console.groq.com</code> for unlimited requests.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">What is the Ollama option in Settings?</div>
+    <div class="faq-a">Ollama is an advanced, optional feature for users who want to run AI fully locally on their own Mac with complete privacy. It requires a Mac running the Ollama software on the same network. Most users can ignore this and use the default Groq option.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do I move my data to a new device?</div>
+    <div class="faq-a">Go to Settings → Backup &amp; Restore → Export backup. Share the file to your new device (via AirDrop, Files, or email), then open Surging on the new device and choose Import backup.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do reminders work?</div>
+    <div class="faq-a">In Settings you can enable a daily reminder at a time and on the days you choose. You can also turn on work session tracking, which sends hourly check-ins when you're falling behind your pace during a set work window.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do I earn points and ranks?</div>
+    <div class="faq-a">You earn points for hitting milestones: +5 at 50% of a goal, +10 for completing it, bonus points for streaks, and +5 for a perfect day. Points move you up an 8-level rank ladder from Rookie to Legend.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is my data backed up automatically?</div>
+    <div class="faq-a">Data is stored locally on your device and persists across app updates and restarts. It is not backed up to the cloud automatically. Use the Export backup feature to save a copy you control.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Report a problem</h2>
+  <p>Found a bug or have a feature request? Email <a href="mailto:surging.app@gmail.com" style="color:var(--teal);text-decoration:none;font-weight:600">surging.app@gmail.com</a> with a short description and, if possible, your device model and iOS version. It helps us fix issues faster.</p>
+</section>
+
+<footer>
+  <span>Surging &mdash; com.juubaker.surging</span>
+  <span><a href="privacy.html" style="color:var(--muted)">Privacy Policy</a></span>
+</footer>
+
+</body>
+</html>
